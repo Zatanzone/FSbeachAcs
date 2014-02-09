@@ -11,8 +11,8 @@ body
 {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	background: white;
-	border: 1px solid #C9E0ED;
+	background: rgb(219, 219, 219);
+	
 }
 
 #header
@@ -34,6 +34,7 @@ body
 
 #footer
 {
+	background: rgb(142, 184, 204) url(bg.gif) repeat-x left top;
 	padding: 10px;
 	margin: 10px 20px;
 	font-size: 0.8em;
@@ -45,6 +46,8 @@ body
 {
 	padding: 10px 20px;
 	font-size: 200%;
+	background-image: url(/FSbeachAcs/images/ui/header-img.jpg);
+	height: 400px;
 }
 
 #mainmenu
@@ -226,4 +229,42 @@ div.search-form
 .operations li a:hover
 {
 	background: #80CFFF;
+}
+
+.con{
+	width: 900px;
+}
+
+.left-con{
+	float: left;
+	width: 672px;
+	height: 700px;
+	
+}
+.right-con{
+	float: right;
+	width: 225px;
+	height: 700px;
+	border-left: solid 3px #C0C0C0;
+}
+
+.title-home{
+	color: #3D3D3D;
+text-shadow: 2px 2px #c2c2c2;
+}
+
+.side-home{
+	margin-top: 10px;
+	margin-left: 20px;
+	color: #5C5858;
+}
+
+.ul-home{
+	list-style-type: none;
+	line-height: 20px;
+}
+
+.ul-home li a {
+	color: #4D4D4D;
+	text-decoration: none;
 }

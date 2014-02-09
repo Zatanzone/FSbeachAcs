@@ -106,4 +106,22 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
+	public function actionRegister() {
+		$model=new Member;
+		
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+		
+		if(isset($_POST['Member']))
+		{
+			$model->attributes=$_POST['Member'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id));
+		}
+		
+		$this->render('regis',array(
+				'model'=>$model,
+		));
+	}
 }

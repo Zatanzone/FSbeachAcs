@@ -1,20 +1,25 @@
-<?php
-/* @var $this SiteController */
+<div class = "con">
+ 
+	<div class ="left-con">
+		<h1 class = "title-home">Welcome to Friend Ship Beach Activity</h1>
+	</div>
+	<div class ="right-con">
+		<h2 class = "side-home">Beach Activity</h2>
+		<ul class ="ul-home">
+			<li><a href="#">Banana Boat</a></li>
+			<li><a href="#">Wake Board</a></li>
+			<li><a href="#">Jet Ski</a></li>
+			<li><a href="#">Water Ski</a></li>
+			<li><a href="#">Paralizing</a></li>
+			<li><a href="#">....</a></li>
+			<li><a href="#">....</a></li>
+			
+		
+		</ul>
+	
+	</div>
+</div>
 
-$this->pageTitle=Yii::app()->name;
-?>
+<div class = "footer">
 
-<h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
-
-<p>Congratulations! You have successfully created your Yii application.</p>
-
-<p>You may change the content of this page by modifying the following two files:</p>
-<ul>
-	<li>View file: <code><?php echo __FILE__; ?></code></li>
-	<li>Layout file: <code><?php echo $this->getLayoutFile('main'); ?></code></li>
-</ul>
-
-<p>For more details on how to further develop this application, please read
-the <a href="http://www.yiiframework.com/doc/">documentation</a>.
-Feel free to ask in the <a href="http://www.yiiframework.com/forum/">forum</a>,
-should you have any questions.</p>
+</div>

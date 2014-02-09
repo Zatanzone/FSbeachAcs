@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
+
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
@@ -23,6 +24,7 @@
 <div class="container" id="page">
 
 	<div id="header">
+
 		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
 	</div><!-- header -->
 
@@ -30,9 +32,11 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'Activities', 'url'=>array('/activity/index')),
+				array('label'=>'Tours', 'url'=>array('/tour/index')),
+				array('label'=>'Promotions', 'url'=>array('/promotion/index'), 'visible'=>!Yii::app()->user->isGuest),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Register', 'url'=>array('/site/register'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
